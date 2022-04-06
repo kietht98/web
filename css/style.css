@@ -3312,7 +3312,7 @@ footer h4 {
 .footer_style_2 {
 	margin-top: 24px;
 	padding: 0;
-	background: #999;
+	background: #838383;
 }
 
 .bottom_footer_style_2 {
@@ -3408,7 +3408,7 @@ footer p a {
 }
 
 .footer-menu li a {
-	color: #666;
+	color: #ccc;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 500;
@@ -3498,6 +3498,54 @@ footer ul.social_icons {
 .service_blog_inner {
 	margin-bottom: 35px;
 	margin-top: 10px;
+    -webkit-box-shadow: 0px 0px 35px 0px rgb(0 0 0 / 7%);
+    -moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.07);
+    box-shadow: 0px 0px 35px 0px rgb(0 0 0 / 7%);
+    padding-top: 40px !important;
+    padding-right: 30px !important;
+    padding-bottom: 40px !important;
+    padding-left: 30px !important;
+    border-radius: 10px !important;
+	transition: all 0.3s ease;
+	min-height: 250px;   
+}
+@media screen and (min-width: 1367px), screen and (min-width: 1200px) and (any-hover: hover), not all, not all, not all
+{
+	.service_blog_inner:hover {
+		-webkit-transform: translateY(-15px);
+		-ms-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+@media screen and (min-width: 1367px), screen and (min-width: 1200px) and (any-hover: hover), not all, not all, not all
+{
+	.service_blog_inner.hover_image:hover:before, .rb_service_module.hover_image:hover:after {
+		top: 0%;
+	}
+}
+.service_blog_inner:before, .service_blog_inner:after {
+    content: '';
+    height: 100%;
+    right: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    -webkit-border-radius: inherit;
+    border-radius: inherit;
+}
+.service_blog_inner:before {
+    top: 80%;
+    opacity: 0;
+    z-index: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}
+
+.service_blog_inner p {
+	min-height: 275px;
 }
 
 .gross_layout {
@@ -3702,15 +3750,25 @@ footer ul.social_icons {
 
 .about_blog {
 	background: #f5f5f5;
-}
+	width: 100%;
+}	
 
 .about_cont_blog {
-	padding: 50px;
+	padding: 80px;
+    background-image: url("../images/it_service/banner-4.png");
+       background-position: top center;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.about_blog h3{
+	color: #fff;
 }
 
 .about_cont_blog p {
-	margin: 0;
+	color: #fff;
 	line-height: 24px;
+	max-width: 550px;
 }
 
 .about_cont_blog ul {
