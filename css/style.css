@@ -909,8 +909,11 @@ hr.dottad_border {
 /*----- Header Top -----*/
 
 header {
-	position: relative;
-	z-index: 1;
+	position: fixed;
+	width: 100vw;
+	background-color: #fff;
+	z-index: 999;
+	box-shadow: -1px 1px 0px 0px #e0e0e0;
 }
 
 header .right_bt {
@@ -1598,7 +1601,7 @@ body.light_blue #full_slider.full_slider_inner {
 	-------------------------------------------------------------------*/
 
 .padding_layout_1 {
-	padding-top: 120px;
+	padding-top: 60px;
 	padding-bottom: 115px;
 }
 
@@ -3492,11 +3495,55 @@ footer ul.social_icons {
 }
 
 .service_blog_inner h4.service-heading {
-	margin: 25px 0 15px 0;
+	margin:0 0 15px 0;
+}
+.divider{
+	width: 2px;
+    max-width: 2px;
+    padding: 0;
+    background: #e35020;
+    height: 51px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+.contact-bg{
+	background-image: url("../images/background/baner-3.png");
+	width: 100vw;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact-bg p{
+	color: #fff;
 }
 
+.grid-template{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	column-gap: 20px;
+	row-gap: 20px;
+
+}
+.grid-template-item .service_blog_inner{
+	min-height: 220px;
+	text-align: center !important;
+}
+.grid-template-item .service_blog_inner h4.service-heading{
+	margin-top: 15px;
+}
+
+.grid-template-item .service_blog_inner .icon {
+	width: fit-content;
+	margin: auto;
+}
+@media (max-width:768px){
+	.grid-template{
+		grid-template-columns: repeat(2,1fr);
+	}
+} 
 .service_blog_inner {
-	margin-bottom: 35px;
+	/* margin-bottom: 35px;
 	margin-top: 10px;
     -webkit-box-shadow: 0px 0px 35px 0px rgb(0 0 0 / 7%);
     -moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.07);
@@ -3507,7 +3554,18 @@ footer ul.social_icons {
     padding-left: 30px !important;
     border-radius: 10px !important;
 	transition: all 0.3s ease;
-	min-height: 250px;   
+	min-height: 250px;    */
+	margin-bottom: 35px;
+    margin-top: 10px;
+    -webkit-box-shadow: 0px 0px 35px 0px rgb(0 0 0 / 7%);
+    -moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.07);
+    box-shadow: 0px 0px 35px 0px rgb(0 0 0 / 7%);
+    padding-top: 30px !important;
+    padding-right: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 30px !important;
+    border-radius: 10px !important;
+    transition: all 0.3s ease;
 }
 @media screen and (min-width: 1367px), screen and (min-width: 1200px) and (any-hover: hover), not all, not all, not all
 {
@@ -3545,14 +3603,14 @@ footer ul.social_icons {
 }
 
 .service_blog_inner p {
-	min-height: 275px;
+	/* min-height: 275px; */
 }
 
 .gross_layout {
 	position: relative;
 }
 
-.gross_layout::after {
+/* .gross_layout::after {
 	position: absolute;
 	background: url(../images/it_service/dark_bg_img.png);
 	width: 35%;
@@ -3562,9 +3620,9 @@ footer ul.social_icons {
 	top: 0;
 	background-size: cover;
 	background-position: right;
-}
+} */
 
-.gross_layout::before {
+/* .gross_layout::before {
 	position: absolute;
 	background: rgba(10, 139, 199, 0.8);
 	width: 35%;
@@ -3575,7 +3633,7 @@ footer ul.social_icons {
 	background-size: cover;
 	background-position: right;
 	z-index: 1;
-}
+} */
 
 .gross_layout.right_gross_layout::after {
 	position: absolute;

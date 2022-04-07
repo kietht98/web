@@ -1610,15 +1610,73 @@ website:   	http://www.themepunch.com
 	padding:10px 0;
 	text-decoration:none;
 }
+.main_slider{
+    margin-top: 81px;
+}
+
+.header {
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+    width: 100vw;
+}
 .group-title{
     position: absolute;
     right: 5%;
     top: -10%;
 }
+.group-left{
+    position: absolute;
+    left: 5%;
+    top: -10%;
+}
+
+.btn-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.btn-detail-wrap{
+    background-color: #0154f7;
+    padding: 20px;
+    min-height: 50px;
+    padding: 0 25px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    white-space: normal;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-detail span {
+    position: relative;
+    -webkit-transition: padding 0.3s ease;
+    transition: padding 0.3s ease;
+}
 .title-text{
-    color: #ffa783;
-    max-width: 667px;
-    margin-top: calc(100vh / 4);
+    color: #ff865e;
+    max-width: 517px;
+    margin-top: calc(80vh / 4);
     font-size: 32px;
     text-align: left;
 }
@@ -1626,19 +1684,19 @@ website:   	http://www.themepunch.com
 .desc-text{
     font-size: 16px;
     line-height: 24px;
-    color: #c6c6c6;
-    max-width: 667px;
+    color: #fff;
+    max-width: 530px;
     margin-right: auto;
     margin-left: auto;
     font-weight: 500;
 }
 .bg-home-page{
-    background-image: url('../../images/it_service/img-12.jpeg');
+    background-image: url('../../images/background/bg-4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     position: relative;
 }
 
