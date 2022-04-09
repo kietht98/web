@@ -755,6 +755,7 @@ hr.dottad_border {
 
 .padding_layout_3 {
 	padding-bottom: 40px;
+	padding-top: 40px;
 }
 .padding_layout_3 .img-map{
 	min-width: 100%;
@@ -3819,21 +3820,23 @@ footer ul.social_icons {
 }	
 
 .about_cont_blog {
-	padding: 80px;
-    background-image: url("../images/it_service/banner-4.png");
+	padding: 40px;
+    background-image: url("../images/background/bg-banner-1.png");
        background-position: top center;
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
 }
 .about_blog h3{
-	color: #fff;
+	color: #e4592c;
+	font-weight: 700;
 }
 
 .about_cont_blog p {
 	color: #fff;
 	line-height: 24px;
 	max-width: 550px;
+	padding-left: 20px;
 }
 
 .about_cont_blog ul {
