@@ -49,7 +49,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i);
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i);
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 /*------------------------------------------------------------------
 		2. IMPORT FILES
 	-------------------------------------------------------------------*/
@@ -72,7 +72,7 @@ html,
 body {
 	color: #898989;
 	font-size: 15px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 	line-height: normal;
 	font-weight: 400;
 	overflow-x: hidden;
@@ -901,7 +901,8 @@ hr.dottad_border {
 	width: 100%;
 }
 
-.section padding_layout_3 {
+.section.padding_layout_3 {
+	padding-top: 60px;
 	padding-bottom: 40px;
 }
 
@@ -2200,30 +2201,33 @@ section.dottad_star_bg {
 	margin-bottom: 50px;
 }
 
-
+.margin-top-60{
+	margin-top: 60px;
+}
 /**== Form ==**/
 
 input.field_custom {
-	border: solid #e1e1e1 1px;
-	width: 100%;
-	background: #f8f8f8;
-	min-height: 50px;
-	padding: 5px 20px;
-	line-height: normal;
-	border-radius: 0px;
-	margin-bottom: 10px;
-	font-size: 14px;
-	color: #737373;
+    border: solid #dbdbdb 1px;
+    width: 100%;
+    background: #f8f8f8;
+    min-height: 50px;
+    padding: 5px 20px;
+    line-height: normal;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #737373;
 }
 
 textarea.field_custom {
-	border: solid #e1e1e1 1px;
+	border: solid #dbdbdb 1px;
 	width: 100%;
 	background: #f8f8f8;
 	min-height: 150px;
 	padding: 15px 20px;
 	line-height: normal;
-	border-radius: 0px;
+	border-radius: 8px;
+
 	margin-bottom: 10px;
 	font-size: 14px;
 	color: #737373;
@@ -3411,7 +3415,7 @@ footer p a {
 }
 
 .footer-menu li a {
-	color: #ccc;
+	color: #fff;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 500;
@@ -3608,6 +3612,9 @@ footer ul.social_icons {
 
 .gross_layout {
 	position: relative;
+}
+.margin_top_60{
+	margin-top: 60px;
 }
 
 /* .gross_layout::after {
@@ -4675,7 +4682,7 @@ footer ul.social_icons {
 
 .contant_form p {
 	color: #333;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 16px;
 }
 
@@ -4776,6 +4783,7 @@ footer ul.social_icons {
 	margin: 0 5%;
 	transition: ease all 0.5s;
 }
+
 
 .service_list_cleaning .contant_information {
 	background: rgba(20, 110, 111, .98);
