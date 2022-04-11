@@ -47,7 +47,7 @@
   <div class="bg_load"> <img class="loader_animation" src="images/loaders/loader_1.png" alt="#" /> </div>
   <!-- end loader -->
   <!-- header -->
-  <header id="default_header" class="header_style_1">
+  <header id="default_header" class="header_style_1 header_fixed_on_scroll">
     <!-- header bottom -->
     <div class="header_bottom">
       <div class="container">
@@ -82,15 +82,16 @@
   <!-- section -->
   <div id="slider" class="section main_slider">
     <div class="container-fuild">
-      <div class="row">
+      <div class="">
         <div class=" NotGeneric-Title  bg-home-page">
           <div class="group-title">
             <h2 class="title-text"> Từ ý tưởng đến thiết kế và triển khai sản phẩm</h2>
-            <p class="desc-text">Đúc rút kinh nghiệp từ hàng triệu sản phẩm được triển khai, chúng tôi tự tin SDP là đối
+            <p class="desc-text">Đúc rút kinh nghiệm từ hàng triệu sản phẩm được triển khai, chúng tôi tự tin SDP là đối
               tác đáng tín cậy để
               cùng bạn xây dựng sản phẩm từ những bước đầu tiên từ ý tưởng, lên thiết kế phần cứng, lập trình firmware
               đến
-              triển khai sản phẩm.... tiêu chí hoạt động của chúng tôi là "Save your time, save your money".</p>
+              triển khai sản phẩm... tiêu chí hoạt động của chúng tôi là <span>"Save your time, save your money"</span>.
+            </p>
           </div>
 
         </div>
@@ -99,7 +100,7 @@
   </div>
   <!-- end section -->
   <!-- section -->
-  <div class="section padding_layout_1">
+  <div class="section padding_layout_1" style="padding-bottom: 0px;">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -115,8 +116,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+      <div class="row" style="justify-content: space-between;">
+        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
           <div class="full text_align_center margin_bottom_30">
             <div class="center">
               <div class="icon"> <img src="images/it_service/icon-solution.png" alt="#" /> </div>
@@ -125,7 +126,7 @@
             <p>Quy trình phát triển phần cứng IoT từ ý tưởng ban đầu và lên giải pháp (Solution)</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
           <div class="full text_align_center margin_bottom_30">
             <div class="center">
               <div class="icon"> <img src="images/it_service/icon-desgin.png" alt="#" /> </div>
@@ -134,7 +135,7 @@
             <p>Thiết kế phần cứng (hardware design)</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
           <div class="full text_align_center margin_bottom_30">
             <div class="center">
               <div class="icon"> <img src="images/it_service/icon-firmware.png" alt="#" /> </div>
@@ -143,13 +144,23 @@
             <p>Lập trình phần mềm (firmware custom)</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
           <div class="full text_align_center margin_bottom_30 margin_0">
             <div class="center">
               <div class="icon"> <img src="images/it_service/icon-prototype.png" alt="#" /> </div>
             </div>
             <h4 class="theme_color">Design prototype</h4>
             <p>Thiết kế prototype và kiểm soát việc đặt hàng linh kiện</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+          <div class="full text_align_center margin_bottom_30 margin_0">
+            <div class="center">
+              <div class="icon"> <img src="images/icon/machinery.png" alt="#" /> </div>
+            </div>
+            <h4 class="theme_color">Design for mass production</h4>
+            <p>Thiết kế phần cứng đảm bảo các tiêu chuẩn sản xuất DFM, DFT, DFA và tối ưu quy trình sản xuất thiết bị.
+            </p>
           </div>
         </div>
       </div>
@@ -220,7 +231,7 @@
         <div class="about_cont_blog">
           <div class="container  text_align_left">
             <div class="row">
-              <div class="col-md-8">
+              <div class="col-sm-12 col-md-8 ">
                 <blockquote>
                   <h3>’’ Sự khác biệt của SDP</h3>
                   <p>Điểm khác biệt của SDP là chúng tôi lắng nghe mong muốn của khách hàng một cách tận tâm và từ những
@@ -229,7 +240,7 @@
                     pháp thiết bị phù hợp nhất. "</p>
                 </blockquote>
               </div>
-              <div class="col-md-4" style="text-align: center;">
+              <div class="col-sm-12 col-md-4  bg-spd" style="text-align: center;">
                 <img src="images/background/Group 2.png" alt="">
               </div>
             </div>
@@ -255,7 +266,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-lg-8 col-md-12 col-sm-12">
           <div class="row">
             <div class="col-md-12">
               <div class="full service_blog_inner" style="margin-top: 0;">
@@ -342,7 +353,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-4 service-right">
           <img src="images/background/bg-2.jpg" style="    max-width: 100vw;
           display: block;
           width: 100vh;
@@ -488,19 +499,146 @@
     </div>
   </div>
 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="full">
+          <div class="main_heading text_align_left">
+            <h2>Các dự án đã hoàn thành </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="news-slider" class="owl-carousel">
+          <div class="post-slide">
+            <div class="post-img">
+              <img
+                src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501"
+                alt="">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur
+                cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+              <a href="#" class="read-more">read more</a>
+            </div>
+          </div>
+
+          <div class="post-slide">
+            <div class="post-img">
+              <img
+                src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=503"
+                alt="">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur
+                cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+              <a href="#" class="read-more">read more</a>
+            </div>
+          </div>
+
+          <div class="post-slide">
+            <div class="post-img">
+              <img
+                src="https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500"
+                alt="">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur
+                cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+              <a href="#" class="read-more">read more</a>
+            </div>
+          </div>
+
+          <div class="post-slide">
+            <div class="post-img">
+              <img
+                src="https://images.unsplash.com/photo-1576659531892-0f4991fca82b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501"
+                alt="">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur
+                cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+              <a href="#" class="read-more">read more</a>
+            </div>
+          </div>
+
+          <div class="post-slide">
+            <div class="post-img">
+              <img
+                src="https://images.unsplash.com/photo-1586083702768-190ae093d34d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=305&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=505"
+                alt="">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur
+                cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+              <a href="#" class="read-more">read more</a>
+            </div>
+          </div>
+
+          <div class="post-slide">
+            <div class="post-img">
+              <img
+                src="https://images.unsplash.com/photo-1484656551321-a1161420a2a0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=306&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=506"
+                alt="">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur
+                cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+              <a href="#" class="read-more">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
   <div class="row">
     <div class="about_blog">
       <div class="contact-bg">
         <div class="container  text_align_left">
           <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-10 col-sm-12">
               <blockquote>
                 <h3>Chúng tôi ở đây để giúp đỡ
                 </h3>
                 <p>Đổi mới cùng với Sdp</p>
               </blockquote>
             </div>
-            <div class="col-md-2 btn-detail">
+            <div class="col-md-2 btn-detail col-sm-12">
               <a href="it_contact.html" target="_blank" rel="noopener noreferrer">
                 <button class="btn-detail-wrap"><span>Contact Us</span></button>
               </a>
@@ -542,9 +680,14 @@
               <div class="main-heading left_text">
                 <h2>Contact us</h2>
               </div>
-              <p>123 Second Street Fifth Avenue,<br>
-                Manhattan, New York<br>
-                <span style="font-size:18px;"><a href="tel:+9876543210">+987 654 3210</a></span>
+              <ul class="footer-menu">
+                <li> <span style="font-size:14px;" class="contact-icon"><span><img src="images/icon/phone.svg"
+                        alt=""></span><a href="tel:+9876543210">(+84) 819 330 300</a></span></li>
+                <li> <span style="font-size:14px;" class="contact-icon"><span><img src="images/icon/phone.svg"
+                        alt=""></span><a href="tel:+9876543210">(+84) 819 330 300</a></span></li>
+                <li> <span style="font-size:14px;" class="contact-icon"><span><img src="images/icon/message.svg"
+                        alt=""></span><a href="mailto:Support@sdpiot.com">Support@sdpiot.com</a></span></li>
+              </ul>
               </p>
             </div>
           </div>
@@ -562,6 +705,9 @@
   <script src="js/wow.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
+  <!-- carousel js -->
+  <script src="js/carousel.js"></script>
+
   <!-- revolution js files -->
   <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
   <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
@@ -574,8 +720,9 @@
   <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
   <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
   <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
   <!-- map js -->
- 
+
   <!-- google map js -->
   </script>
   <!-- end google map js -->
