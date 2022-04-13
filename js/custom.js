@@ -281,7 +281,7 @@ $('.circle button').click(function(e) {
     toggleOptions($(this).parent());
 });
  
-setTimeout(function() { toggleOptions('.circle'); }, 100);
+// setTimeout(function() { toggleOptions('.circle'); }, 100);
 
 var btn = $('#button-top');
 
