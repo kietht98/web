@@ -2065,6 +2065,13 @@
 }
 
 @media (max-width:574px) {
+	#button-top{
+		width: 40px;
+		height: 40px;
+	}
+	#button-top::after{
+		line-height: 40px;
+	}
 	.group-title {
 		padding: 10px !important;
 	}

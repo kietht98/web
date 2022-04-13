@@ -228,3 +228,73 @@ $(window).scroll(function () {
     $(".header_fixed_on_scroll").removeClass("fixed-header");
   }
 });
+
+
+// var btn = document.querySelector('.button');
+// var buttonWrapper = document.querySelectorAll('.button-wrapper');
+ 
+// btn.addEventListener('click', function(){
+  
+//   if(btn.classList.contains('animation')) {
+//     btn.classList.remove('animation');
+//   } else {
+//     btn.classList.add('animation');
+//   }
+  
+//   for (var i = 0; i < buttonWrapper.length; i++ ) {
+//     if(buttonWrapper[i].classList.contains('animation')){
+//       buttonWrapper[i].classList.remove('animation');   
+//     } else {
+//       buttonWrapper[i].classList.add('animation');
+//     }  
+//   }
+  
+// });
+
+
+var angleStart = -360;
+ 
+// rotate animation
+function rotate(li,d) {
+    $({d:angleStart}).animate({d:d}, {
+        step: function(now) {
+            $(li)
+               .css({ transform: 'rotate('+now+'deg)' })
+               .find('label')
+                  .css({ transform: 'rotate('+(-now)+'deg)' });
+        }, duration: 0
+    });
+}
+ 
+// show / hide
+function toggleOptions(s) {
+    $(s).toggleClass('open');
+    var li = $(s).find('li');
+    var deg = $(s).hasClass('half') ? 150/(li.length-1) : 180/li.length;
+    for(var i=0; i<li.length; i++) {
+        var d = $(s).hasClass('half') ? (i*deg)-90 : i*deg;
+        $(s).hasClass('open') ? rotate(li[i],d) : rotate(li[i],angleStart);
+    }
+}
+ 
+$('.circle button').click(function(e) {
+    toggleOptions($(this).parent());
+});
+ 
+setTimeout(function() { toggleOptions('.circle'); }, 100);
+
+var btn = $('#button-top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
