@@ -5996,8 +5996,8 @@ html{
 }
   .circle {
 	position: fixed;
-    bottom: 100px;
-    left: 100px;
+	bottom: 200px;
+	right: 50px;
 	width: 70px;
 	height: 70px;
 	margin-top: -70px;
@@ -6075,6 +6075,7 @@ html{
 	line-height: 50px;
 	margin-left: -40px;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+	overflow: visible;
   }
   .fab {
 	font-size: 50px;
@@ -6111,7 +6112,7 @@ html{
 	width: 50px;
 	height: 50px;
 	text-align: center;
-	border-radius: 4px;
+	border-radius: 50%;
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
@@ -6168,3 +6169,46 @@ html{
 		transform: scale(1.1);
 	}
 }
+	.tooltip{
+		opacity: 1;
+	}
+
+  .tooltip :hover + .tip {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: initial;
+  }
+  .tip {
+	position: absolute;
+    padding: 0.5em 2em;
+    background: #000000;
+    width: auto;
+    max-width: 16em;
+    height: auto;
+    text-align: center;
+    border-radius: 15px;
+    word-wrap: break-word;
+    top: 0px;
+    right: 55px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+	color: #ffffff;
+  }
+  
+  .tip::after {
+    --trangle-length: 1em;
+    content: "";
+    position: absolute;
+    width: var(--trangle-length);
+    height: var(--trangle-length);
+    background: #000000;
+    bottom: calc(100% - var(--trangle-length) / 2);
+    top: calc(50% - var(--trangle-length) / 2);
+    transform: rotate(45deg);
+    right: 0px;
+  }
+  

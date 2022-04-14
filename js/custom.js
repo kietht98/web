@@ -270,7 +270,7 @@ function rotate(li,d) {
 function toggleOptions(s) {
     $(s).toggleClass('open');
     var li = $(s).find('li');
-    var deg = $(s).hasClass('half') ? 150/(li.length-1) : 180/li.length;
+    var deg = $(s).hasClass('half') ? -150/(li.length-1) : -180/li.length;
     for(var i=0; i<li.length; i++) {
         var d = $(s).hasClass('half') ? (i*deg)-90 : i*deg;
         $(s).hasClass('open') ? rotate(li[i],d) : rotate(li[i],angleStart);
